@@ -1,0 +1,63 @@
+<html>
+	<head>
+		<title>Student Regisration Form</title>
+	</head>
+	
+	<body>
+		<h1>Student Registration Form</h1>
+		<form>
+			<fieldset>
+				<legend>Personal Details</legend>
+				<label for="name" >Full Name :</label>
+				<input type="text" placeholder="Full Name" id="name"  required><br><br>
+				<label for="gender" >Gender :</label>
+				<input type="radio" id="name"><label for="male">Male</label>
+				<input type="radio" id="name"><label>Female</label><br><br>
+				<label for="dateofbirth">Date of Birth:</label>
+				<input type="date"	id="dateofbirth"  required><br><br>
+				<label for="moblienumber">Mobile Number:</label>
+				<input type="tel" id="moblienumber" placeholder="07XXXXXXXX"  required><br><br>
+				<label for="photoupload">Upload Photo:</label>
+				<input type="file" placeholder="NO File Chosen"  required>	
+			</fieldset><br><br>
+			
+			<fieldset>
+					<legend>Educational Details</legend>
+					<label for="AL">GCE A/L Year:</label>
+					<input type="Year" id="AL"  required><br><br>
+					<label for="cirtificate">Upload A/L Certificate:</label>
+					<input type="file" id="cirtificate" placeholder="NO Files Chosen" required><br><br>
+					<label for="university"  required>Select Your University:</label>
+					<select >
+						<option>—Select University--</option>
+						<option>University of Jaffna</option>
+						<option>University of Colombo</option>
+						<option>University of Moratuwa</option>
+						<option>University of Peradeniya</option>
+						<option>Eastern University of Sri Lanka</option>
+					</select>		
+			</fieldset><br><br>
+			
+			<fieldset>
+				<legend>Payment Details</legend>
+				<label for="card">Card Number(if paying by Credit Card) :</label>
+				<input type="Number" maxlength="16" placeholder="16-digit Card Number"  required ><br><br>
+				<label for="exp">Expiry Date:</label>
+				<input type="date"  required><br><br>
+				<label for="cvv">CVV:</label>
+				<input type="Number" maxlength="3" placeholder="3-digit CVV"  required>
+			</fieldset><br><br>
+			
+			<fieldset>
+				<legend>Learning Preferences</legend>
+				<label>Select your preferred learning methods:</label><br><br>
+				<input type="checkbox"  required><label>online</label><br>
+				<input type="checkbox"  required><label>In-person</label>
+			</fieldset><br><br>
+			
+			<input type="submit" value="Submit">
+			<input type="reset" value="Reset">
+			
+		</form>
+	</body>
+</html>
