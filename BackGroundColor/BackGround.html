@@ -1,0 +1,121 @@
+<html>
+	<head>
+		<style>
+			body
+			{
+				background-color:lightblue;
+				background-image:url("kakashi.png");
+				background-size: cover;
+				backdrop-filter: blur(2px);
+				background-position: center center;
+				<!--background-position:top right:-->
+				background-repeat:repeat-x;     <!--repeats only horizontally{no-repeat  =   only one image}-->
+				
+			h1
+			{
+				background-color:yellow;
+				opacity:0.7;    <!--controls the transperncy-->
+			}
+			
+			p.dotted{border-style:dotted;}
+			p.dashed{border-style:dashed;}
+			p.solid{border-style:solid;}
+			p.groove{border-style:groove;}
+			p.redge{border-style:redge;}
+			p.inset{border-style:inset;}
+			p.outset{border-style:outset;}
+			p.hidden{border-style:hidden;}
+			p.mix{border-style:dotted dashed solid double;}
+			
+			p.one{border-style:solid; border-width:5px 20px;}
+			p.two{border-style:solid; border-width:20px 5px;}
+			p.three{border-style:solid; border-width:25px 10px 4px 35px;}
+			
+			
+			p.alpha {
+			  border-style: solid;
+			  border-color: red;
+			}
+
+			p.beta {
+			  border-style: solid;
+			  border-color: green;
+			} 
+
+			p.gama {
+			  border-style: dotted;
+			  color: pink;  <!--it inherits the color-->
+			} 
+			
+			p.amma {
+			  border-style: solid;
+			  border-color: red green blue yellow;
+			  border-width: thick;
+			} 
+			
+			p.normal {
+			  border: 2px solid red;
+			  padding: 5px;
+			  border-width: thick;
+			}
+
+			p.round1 {
+			  border: 2px solid red;
+			  border-radius: 5px;
+			  padding: 5px;
+			  border-width: thick;
+			}
+
+			p.round2 {
+			  border: 2px solid red;
+			  border-radius: 8px;
+			  padding: 5px;
+			  border-width: thick;
+			}
+
+			p.round3 {
+			  border: 2px solid red;
+			  border-radius: 12px;
+			  padding: 5px;
+			  border-width: thick;
+		</style>
+	</head>
+	<body>
+		<h1>Back Ground</h1>
+		<p class="dotted">This is a paragraph</p>
+		<p class="dashed">This is a paragraph</p>
+		<p class="solid">This is a paragraph</p>
+		<p class="groove">This is a paragraph</p>
+		<p class="redge">This is a paragraph</p>
+		<p class="inset">This is a paragraph</p>
+		<p class="outset">This is a paragraph</p>
+		<p class="hidden">This is a paragraph</p>
+		<p class="mix">This is a paragraph</p>		
+		
+		<hr>
+		<hr><hr>
+		<p class="one">This is a paragraph</p>		
+		<p class="two">This is a paragraph</p>		
+		<p class="three">This is a paragraph</p>		
+		
+		<br>
+		
+		<p class="alpha">A solid red border</p>
+		<p class="beta">A solid green border</p>
+		<p class="gama">A dotted blue border</p>
+		
+		<br>
+		
+		<p class="amma">A dotted blue border</p>
+		
+		<br>
+		
+		<p class="normal">Normal border</p>
+		<p class="round1">Round border</p>
+		<p class="round2">Rounder border</p>
+		<p class="round3">Roundest border</p>
+		
+		
+		
+	</body>
+</html>
