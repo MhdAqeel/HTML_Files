@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <style>
+            body
+            {
+                text-align: center;
+            }
+            form
+            {
+                border: 2px ;
+                border-radius: 10px;
+                background-color: rgb(157, 229, 246);
+                margin: 20px;
+                box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+                display: inline-block;
+            }
+            input
+            {
+                border-radius: 5px;
+                padding-left: 20px;
+                margin: 10px;
+                border: 2px;
+                border-color: aliceblue;
+            }
+            select
+            {
+                border-radius: 5px;
+                padding-left: 20px;
+                margin: 10px;
+                border: 2px;
+                border-color: aliceblue;
+            }
+            label
+            {
+                float: left;
+                padding-left: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <h2>Place Your Order</h2>
+        <form>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br>
+        <label for="address">Address:</label><br>
+        <input type="text" id="address" name="address" required><br>
+        <label for="pizza">Choose your pizza:</label><br>
+            <select name="pizza" id="pizza">
+                <option disabled selected>Choose your pizza</option>
+                <option >Margherita</option>
+                <option >Pepperoni</option>
+                <option >Veggie</option>
+                <option >BBQ Chicken</option>
+            </select><br>
+        <label for="quntity">Quantity:</label><br>
+        <input type="text" id="quntity" name="quntity" required><br>
+        <input type="submit" value="Place Order" style="background-color: black;color: white;">
+        </form>
+    </body>
+</html>
