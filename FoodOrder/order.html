@@ -93,7 +93,8 @@
             <li><a href="contact.html">Contact</a></li>		
         </ul>
         <h2>Place Your Order</h2>
-        <form>
+        
+        <form class="order-form" action="success.html" method="get">
         <label for="name">Name:</label><br>
         <input type="text" id="name" name="name" required><br>
         <label for="address">Address:</label><br>
@@ -106,8 +107,8 @@
                 <option >Veggie</option>
                 <option >BBQ Chicken</option>
             </select><br>
-        <label for="quntity">Quantity:</label><br>
-        <input type="text" id="quntity" name="quntity" required><br>
+        <label for="quantity">Quantity:</label><br>
+        <input type="number" id="quantity" name="quantity" required><br>
         <input type="submit" value="Place Order" style="background-color: black;color: white;">
         </form>
         <footer>©2024 Pizza Palace.All rigthts reserved</footer>
