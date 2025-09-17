@@ -1,0 +1,130 @@
+<html>
+	<head>
+		<style>
+			.inlineexample
+			{
+				display:inline;
+			}
+			.span-example
+			{
+				display:block;
+				background-color:lightblue;
+				padding: 10px;
+				margin: 5px;
+			}
+			.wrapper
+			{
+				border : 2px solid red;
+				display: contents;  /*removes the wrapper box*/
+			}
+			.child
+			{
+				background-color: lightblue;
+				padding: 10px;
+				margin: 5px;
+			}
+			
+			.fles-container
+			{
+				display : flex; /*activate flex layout*/
+				background-color: lightgrey;
+				padding : 10px;
+				gap : 10px;  /*space betwen items*/
+			}
+			.flex-item
+			{
+				background-color: lightblue;
+				padding : 20px;
+				text-align: center;
+				flex:1; /*all items takes equal space*/
+			}
+			.fles-container1
+			{
+				display : flex; /*activate flex layout*/
+				
+				justify-content : center;
+				align-items:center;
+				height: 200px;
+				background-color: lightgrey;
+			}
+			.flex-item1
+			{
+				background-color: lightblue;
+				padding : 20px;
+				text-align: center;
+				flex:1; /*all items takes equal space*/
+			}
+			
+			.container
+			{
+				display : grid;
+				grid-template-columns : repeat (3 , 1fr);
+				gap : 10px;
+				border : 2px solid black;
+				padding : 10px;
+			}
+			.item
+			{
+				background-color: lightgreen;
+				padding : 20px;
+				text-align : center;
+				color: white;
+				font-weight : bold;;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="inlineexample">one</div>
+		<div class="inlineexample">two</div>
+		<div class="inlineexample">three</div>
+		<br>
+		<br>
+		
+		<div class="span-example">Span example</div>
+		<div class="span-example">Span example</div>
+		<div class="span-example">Span example</div>
+		<br>
+		<br>
+		
+		<hr>
+		<div class="wrapper">
+			<div class="child">Child 1</div>
+			<div class="child">Child 2</div>
+			<div class="child">Child 3</div>
+		</div>
+		
+		<br>
+		<br>
+		<hr>
+		<h2>Display flex examples</h2>
+		<div class="fles-container">
+			<div class="flex-item">item 1</div>
+			<div class="flex-item">item 2</div>
+			<div class="flex-item">item 3</div>
+		</div>
+		
+		<br>
+		<br>
+		<hr>
+		<h2>Display flex examples vertical</h2>
+		<div class="fles-container1">
+			<div class="flex-item1">item 1</div>
+			<div class="flex-item1">item 2</div>
+			<div class="flex-item1">item 3</div>
+		</div>
+		
+		<br>
+		<br>
+		<hr>
+		<h2>Grid examples</h2>
+		<div class="container">
+			<div class="item">one</div>
+			<div class="item">two</div>
+			<div class="item">three</div>
+			<div class="item">four</div>
+			<div class="item">five</div>
+			<div class="item">six</div>
+			
+		</div>
+	</body>
+</html>

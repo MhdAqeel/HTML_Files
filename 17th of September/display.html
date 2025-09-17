@@ -1,0 +1,50 @@
+<html>
+	<head>
+		<style>
+			.box{
+				display : inline-block;
+				width : 100px;
+				height : 100px;
+				background-color : lightseagreen;
+				color: white;
+				margin : 10px;
+				text-align : center;
+				line-height : 100px;
+				font-weight: bold;
+				border-radius: 8px;
+			}
+			.box-hidden{
+				display : none;
+			}
+			#panel, .flip{
+				padding : 10px;
+				text-align : center;
+				background-color : #04AA6D;
+				border : 1px solid black;
+				margin : auto;
+				cursor : pointer;
+			}
+			#panel{
+				display: none;
+			}
+		</style>
+	</head>
+	<body>
+		<h2>Display in-line block</h2>
+		<div class="box">Box 1</div>
+		<div class="box-hidden">Box 2</div>
+		<div class="box">Box 3</div>
+		<div class="box">Box 4</div>
+
+		<p class="flip" onclick="myFunction()">Click to show pannel</p>
+		<div id="panel" >
+			<p>whis pannel contains a div element , which is hidden by default. (display: none;)</p>
+			<p>we use java script to show it (display: block;)</p>
+		</div>
+		<script>
+			function myFunction() {
+			  document.getElementById("panel").style.display = "block";
+			}
+		</script>
+	</body>
+</html>
