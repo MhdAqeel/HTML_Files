@@ -1,0 +1,109 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+
+header
+{
+    background-color: black;
+    color: white;
+    width: 100%;
+}
+
+body
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-items: center;
+}
+header h1
+{
+    text-align: center;
+}
+
+nav ul
+{
+    list-style-type:none ;
+    text-align: center;
+}
+nav ul li{
+    display: inline;
+    padding: 0 15px;
+    font-weight: bold;
+}
+
+nav ul li a 
+{
+    color: white;
+    text-decoration: none;
+}
+section
+{
+
+    padding: 20px;
+    width: 50%;
+
+}
+section h2
+{
+    padding-bottom: 20px;
+}
+section p
+{
+    padding-top: 20px;
+}
+img
+{
+    border-radius: 8px;
+
+}
+footer
+{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+}
+.menu-item
+{
+    display: flex;
+    background-color: black;
+    color: white;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+.menu-item img
+{
+    width: 150px;
+    height: 150px;
+}
+.menu-item h3
+{
+    color: rgb(211, 105, 35);
+}
+.price
+{
+    font-weight: bold;
+}
+form
+{
+    background-color: lightblue;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column  ;
+}
+input[type="text"],input[type="textarea"],input[type="number"],select,input[type="submit"]
+{
+    padding: 20px;
+    padding-bottom: 10px;
+    border-radius: 8px;
+}

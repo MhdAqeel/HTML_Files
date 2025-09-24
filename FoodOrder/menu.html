@@ -1,125 +1,62 @@
 <html>
-    <head>
-        <style>
-            ul
-            {
-                text-align:center;
-                list-style-type: none;
-                margin :0;
-                padding :0;
-                overflow: hidden;
-                background-color:black;
-                top:0;
-                width:100%;				
-            }
-            li
-            {
-                color:white;
-                float:left;
-                border-right: 1px solid #bb; 
-                text-align:center;
-                justify-content: center;
-            }
-            li a
-            { 
-                display: inline;
-                color: white;
-                padding: 8px 16px;
-                text-decoration : none;
-                justify-content: center;
-            }
-            li a:hover
-            {
-                background-color :lightblue;
-                color: white;
-            }
-            h1
-            {
-                color:white;
-            }
-            footer
-            {
-                background-color:black;
-                color:white;
-                text-align:center;
-                position:fixed;
-                bottom: 0;
-                margin :0;
-                padding :0;
-                width:100%;	
-            }
-            body {
-                text-align: center;
-                font-family: Arial, sans-serif;
-            }
-            h2
-            {
-                color: #333;
-            }
-            img {
-                width: 150px;
-                height: 150px;
-                border-radius: 10px;
-                box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-                float: left;
-                padding-left: 1px;
-            }
-            div{
-                margin: 20px;
-                padding: 20px;
-                border: 2px solid;
-                border-radius: 10px;
-                background-color:black;
-                box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-                display: inline-block;
-                text-align: left;
-                color: white;
-                width: 50%;
-            }
-            div p {
-                margin: 5px 0;
-                font-size: 16px;
-                padding: 5px;
-            }
-        </style>
-    </head>
-    <body>
-        <ul>
-            <h1>Delicious Pizza Just for you!</h1>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="order.html">Order</a></li>
-            <li><a href="contact.html">Contact</a></li>		
-        </ul>
+	<head>
+		<link rel="stylesheet" href="Style.css">
+	</head>
+	<body>
+	
+		
+		<header>
 
-        <h2>Delicious Pizza Just for You!</h2>
-        <div>
-            <img src="margherita.jpg" alt="Margherita Pizza">
-            <p style="color: #ff6347;"><b>Margherita</b></p>
-            <p>A classic delight with fresh tomatoes, mozzarella cheese, and basil.</p>
-            <p><strong>$10</strong></p>
-        </div>
-        <br>
-        <div>
-            <img src="pepperoni.jpg" alt="Pepperoni Pizza">
-            <p style="color: #ff6347;"><b>Pepperoni</b></p>
-            <p>Loaded with spicy pepperoni, mozzarella, and a tangy tomato sauce.</p>
-            <p><strong>$12</strong></p>
-        </div>
-        <br>
-        <div>
-            <img src="veggie.jpg" alt="Veggie Pizza">
-            <p style="color: #ff6347;"><b>Veggie</b></p>
-            <p>A medley of fresh vegetables, mozzarella cheese, and tomato sauce.</p>
-            <p><strong>$11</strong></p>
-        </div>
-        <br>
-        <div>
-            <img src="bbq.jpg" alt="BBQ Chicken Pizza">
-            <p style="color: #ff6347;"><b>BBQ Chicken</b></p>
-            <p>Grilled chicken, BBQ sauce, onions, and mozzarella cheese.</p>
-            <p><strong>$13</strong></p>
-        </div>
-        <footer>©2024 Pizza Palace.All rigthts reserved</footer>
-    </body>
+			<h1>Our Menu</h1>
+
+			<nav>
+				<ul>
+					<li><a href="home.html">Home</a></li>
+					<li><a href="menu.html">Menu</a></li>
+					<li><a href="order.html">Order</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+			
+		</header>
+			 		
+		<section>
+			<h2 id="hi">Delicious Pizza Just for you!</h2>
+			<div class="menu-item">
+                <img src="margherita.jpg" alt="margherita">
+                <div>
+                    <h3>Margherita</h3>
+                    <p>A classic delight with fresh tomatoes, mozzarella cheese, and basil.</p>
+                    <p class="price">$10.00</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="pepperoni.jpg" alt="pepperoni">
+                <div>
+                    <h3>Pepperoni</h3>
+                    <p>Loaded with spicy pepperoni, mozzarella, and a tangy tomato sauce.</p>
+                    <p class="price">$12.00</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="veggie.jpg" alt="veggie pizza">
+                <div>
+                    <h3>Veggie</h3>
+                    <p>A medley of fresh vegetables, mozzarella cheese, and tomato sauce.</p>
+                    <p class="price">$11.00</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="bbq.jpg" alt="BBQ Chicken Pizza">
+                <div>
+                    <h3>BBQ Chicken</h3>
+                    <p>Grilled chicken, BBQ sauce, onions, and mozzarella cheese.</p>
+                    <p class="price">$13.00</p>
+                </div>
+            </div>
+		</section>
+			
+		<footer>©2024 Pizza Palace.All rigthts reserved</footer>
+		
+	</body>
 </html>
