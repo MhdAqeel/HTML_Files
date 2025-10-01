@@ -1,0 +1,136 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f9;
+    color: #333;
+  }
+  
+  .container {
+    display: flex;
+    max-width: 1100px;
+    margin: 20px auto;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    background: white;
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    background: #2c3e50;
+    color: white;
+    width: 30%;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+  }
+  
+  .sidebar h1 {
+    margin: 10px 0;
+    font-size: 24px;
+  }
+  
+  .sidebar .title {
+    font-style: italic;
+    margin-bottom: 20px;
+  }
+  
+  .sidebar h2 {
+    border-bottom: 1px solid #ddd;
+    margin: 20px 0 10px;
+    font-size: 18px;
+    padding-bottom: 5px;
+  }
+  
+  .skills {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .skills li {
+    background: #34495e;
+    margin: 5px 0;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+
+  .skills li:hover{
+    background-color: rgb(40, 102, 173);
+    font-size: 18px;
+  }
+  
+  .detail:hover
+  {
+    background-color: rgb(40, 102, 173);
+    font-size: 18px;
+  }
+  /* Main Content */
+  .main-content {
+    padding: 20px 30px;
+    width: 70%;
+  }
+  
+  .main-content h2 {
+    border-bottom: 2px solid #2c3e50;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    color: #2c3e50;
+  }
+  
+  .education, .job, .project {
+    margin-bottom: 20px;
+  }
+  
+  .education h3, .job h3, .project h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #2c3e50;
+  }
+  
+  .education span, .job span {
+    float: right;
+    color: gray;
+    font-size: 14px;
+  }
+  
+  .job ul {
+    margin: 8px 0 0 20px;
+    padding: 0;
+  }
+  
+  .job ul li {
+    margin-bottom: 5px;
+  }
+  
+  .project p {
+    margin: 5px 0 0;
+  }
+  
+  .achievements ul {
+    margin: 8px 0 0 20px;
+    padding: 0;
+  }
+  
+  .achievements ul li {
+    margin-bottom: 5px;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+    .sidebar, .main-content {
+      width: 100%;
+    }
+  }
+  
