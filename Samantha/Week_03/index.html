@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <title>Display CSS</title>
+        <style>
+            a{
+                display:list-item;
+                
+            }
+            a:hover{color: red;}    /*psudoclass*/
+            p::first-letter{font-weight: bold;color: red;}
+            a:link{color: #00f; font-weight: bold;}
+            a:visited{color: purple; border: groove;}
+            h1,h2,h3{
+                display: list-item;
+                font-size: 12px;
+                font-family: sans-serif;
+                font-style: italic;
+
+            }
+            img{
+                width: 50%;
+                height: 50%;
+            }
+            .cat{
+                background-color: yellow;
+                display: inline-block;
+            }
+            .block{
+                background-color: rgb(87, 196, 87);
+                display:block;
+            }
+         .Box{
+            width: 200px;
+            padding: 10px;
+            border: 1px solid black;
+            margin: 20px;
+            background-color: lightgray;
+            border-radius: 5px;
+         }
+
+         .relative{
+            position: relative;
+            top: 20px;
+            left:20px;
+            background: yellow;
+         }
+         .absalute{
+            position: absolute;
+            top: 50px;
+            left: 100px;
+            background: pink;
+         }
+         .fixed{
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            right: 10px;
+            background: lightblue;
+         }
+        </style>
+    </head>
+    <body>
+        <h1>Courses</h1>
+        <a href="#course1.html">course 1</a>
+        <a href="#course2.html">course 2</a>
+        <a href="#course3.html">course 3</a>
+        <a href="#course4.html">course 4</a>
+        <h1>Profile</h1>
+        <h2>Education</h2>
+        <h3>Technology</h3>
+
+        <p class="cat">This is inline</p>
+        <p class="cat">Another inline</p>
+        <div class="block">
+            <p>This is block</p>
+            <p>Another block</p>
+        </div>
+        
+        <img src="C:\Users\DCSUser\Downloads\8c4pgtjkvn831.jpg" alt="this is a picture of a cat">
+        <div class="Box">Box model example</div>
+
+        <div class="relative">Relative</div>
+        <div class="absalute">Absalute</div>
+        <div class="fixed">Fixed</div>
+    </body>
+</html>
