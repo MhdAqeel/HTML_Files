@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>Event Handle</title>
+
+        <style>
+            #myDiv{
+                width: 300px;
+                height: 300px;
+                background-color: aqua;
+            }
+        </style>
+    </head>
+    <body>
+        <p>Click the button below to perforn an event</p>
+        <input type="text" id="fname" name="firstname" placeholder="enter name">
+        <button id="myButton">Click Me</button>
+
+        <div id ="myDiv">Hover Over Me</div>
+
+        <h1 id ="db1">Hello! world</h1>
+        <button id="button2">click here</button>
+
+        <script>
+            const button = document.getElementById("myButton");
+            const fname = document.getElementById("fname");
+            function handleClick(){
+                alert("Button Clicked");
+            }
+
+            const myDiv = document.getElementById("myDiv");
+
+            function handleMouseover(){
+                myDiv.style.backgroundColor = "lightcoral";
+            }
+
+            myDiv.addEventListener("mouseover",handleMouseover);
+
+            function handleMouseout(){
+                myDiv.style.backgroundColor="lightblue";
+            }
+
+            myDiv.addEventListener("mouseout",handleMouseout);
+
+
+            const doubleClickButton = document.getElementById("button2");
+            function checkDoubleClick(){
+                const heder = document.getElementById("db1");
+                heder.style.color = "red";
+                heder.style.fontFamily = "serif";
+                heder.style.fontSize = "18px";
+            }
+            doubleClickButton.addEventListener("dblclick",checkDoubleClick);
+        </script>
+    </body>
+</html>
