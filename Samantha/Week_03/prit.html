@@ -1,18 +1,42 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title></title>
+        <title>Introduction to JavaScript</title>
+        <style>
+            #box1{
+                background-color: rgb(245, 219, 132);
+            }
+        </style>
     </head>
     <body>
-        <div>
+        <div id="box1">
             <h1 id="welcome-message">Welcome to the java script fun</h1>
             <h2>JavaScript print example</h2>
             <p id="demo"></p>
         </div>
+
+        <div id="box2">
+            <label>UserName</label>
+            <input type="text" id="username" placeholder="Enter Your UserName here">
+            <button onclick="printGreeting()">Click here!!</button>
+            <p id="greet"></p>
+        </div>
+
+        <img src="C:\Users\dcsuser\Downloads\images.jpg" alt="picture of a octopus" id="icon1">
         
         <script>
             document.getElementById("demo").innerHTML = "Hello JavaScript";
-            document.getElementById("welcome-message").textContent="Welcome to JS DOM fun"
-        </script>
+            document.getElementById("welcome-message").textContent="Welcome to the DOM examples getElementById"
+            document.getElementById("welcome-message").style.backgroundColor = "#03fcd3";
+            function printGreeting(){
+                let uname = document.getElementById("username").value;
+                document.getElementById("greet")
+                console.log(uname)
+            }
+            
+            var icon = document.getElementById("icon1");
+
+
+       </script>
     </body>
 </html>
