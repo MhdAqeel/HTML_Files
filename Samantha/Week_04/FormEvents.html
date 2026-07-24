@@ -1,0 +1,29 @@
+<html>
+	<head>
+	
+	</head>
+	
+	<body>
+		<form onsubmit="return validateForm()" onreset="restForm()">
+		<label for="username">User Name</label>
+		<input type="text" id"username" name="username" required><br>
+		<label for="password">Password</label>
+		<input type="password" id="password" name="password"><br>
+		<label for="country">Select a Country</label>
+		<select id="country" onchange="handleChange()">
+			<option value="USA">USA</option>
+			<option value="Canada">Canada</option>
+			<option value="UK">UK</option>
+			<option value="India">India</option>
+		</select><br>
+		<label for="email">Email</label>
+		<input type="email" id"email" name="email" required><br>
+		<label for="search">Search</label>
+		<input type="text" id"search" oninput="handleinput()"><br>
+		<input type="submit" value="Submit"></input>
+		<input type="reset" value="Reset"></input>
+		
+		
+		</form>
+	</body>
+</html>

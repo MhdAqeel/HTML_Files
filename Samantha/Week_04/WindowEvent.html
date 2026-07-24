@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <script>
+            window.addEventListener('load', function() {
+                var initialSizeInfo = "Initial window size: " + window.innerWidth + 'x' + window.innerHeight;
+                document.getElementById('resizeablewindow').innerText = initialSizeInfo;
+                alert('this page has finished loading');
+            });
+
+            window.addEventListener('resize', function() {
+                var newSizeInfo = "New window size: " + window.innerWidth + 'x' + window.innerHeight;
+                document.getElementById('resizeablewindow').innerText = newSizeInfo;
+                alert('page has been resized');
+            });
+
+            window.addEventListener('scroll', function() {
+                alert('you have scrolled this page.');
+            });
+        </script>
+    </head>
+    <body>
+        <div id="resizeablewindow">Initial window size: (calculating...)</div>
+    </body>
+</html>
