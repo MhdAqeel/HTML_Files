@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Keyboard Event Demo</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			padding: 20px;
+		}
+		#output, #output1 {
+			margin-top: 10px;
+			padding: 10px;
+			border: 1px solid #ccc;
+			min-height: 40px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Event Handler Demo</h1>
+	<p>Type inside the input box below:</p>
+
+	<input type="text" id="input" placeholder="Press any key here" />
+
+	<div id="output"></div>
+	<div id="output1"></div>
+
+	<script>
+		const input = document.getElementById('input');
+		const output = document.getElementById('output');
+		const output1 = document.getElementById('output1');
+
+		function handleKeyDown(event) {
+			output.innerHTML += "Key pressed: " + event.key + "<br>";
+			output.innerHTML += "Key code: " + event.code + "<br><br>";
+		}
+
+		function handleKeyUp(event) {
+			output1.innerHTML += "Key released: " + event.key + "<br><br>";
+		}
+
+		input.addEventListener('keydown', handleKeyDown);
+		input.addEventListener('keyup', handleKeyUp);
+	</script>
+</body>
+</html>
