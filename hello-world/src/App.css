@@ -1,0 +1,16 @@
+
+#myself{
+  font-family: 'Times New Roman', Times, serif;
+  color: rgb(50, 21, 216);
+}
+
+#message{
+  border: "1px solid #e2e8f0";
+    borderRadius: "16px";
+    padding: "24px";
+    boxShadow: "0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05)";
+    backgroundColor: "#ffffff";
+    maxWidth: "500px";
+    margin: "40px auto";
+    fontFamily: "system-ui, sans-serif";
+}
