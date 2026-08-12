@@ -3,6 +3,7 @@ import './App.css'
 import Counter from './Counter';
 import InputDisplay from "./InputDisplay"
 import StudentForm from "./Student-Form";
+import ProductCalculator from "./ProductCalculator";
 
 const CardWrapper = (props) => {
   const cardStyle = {
@@ -111,6 +112,8 @@ function App() {
       <Counter />
       <InputDisplay/>
       <StudentForm />
+      <ProductCalculator />
+    
     </div>
   );
 

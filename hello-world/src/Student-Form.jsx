@@ -1,6 +1,6 @@
 // The following tools were utilized during this assignment: Claude (helped structure the controlled form and conditional rendering logic based on class example)
 
-import React, { useState } from "react";
+import React, { useState , useEffect } from "react";
 
 function StudentForm() {
     const [studentId, setStudentId] = useState('');
@@ -8,9 +8,15 @@ function StudentForm() {
     const [email, setEmail] = useState('');
     const [course, setCourse] = useState('');
     const [registered, setRegistered] = useState(false);
+    const [studentCount, setStudentCount] = useState(0);
+
+    useEffect(() => {
+        document.title = `Student ${studentCount}`;
+    }, [studentCount]);
 
     const handleRegister = () => {
         setRegistered(true);
+        setStudentCount(studentCount + 1);
     }
 
     return (
