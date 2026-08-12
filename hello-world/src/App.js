@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import './App.css'
+import Counter from './Counter';
+import InputDisplay from "./InputDisplay";
 
 const CardWrapper = (props) => {
   const cardStyle = {
@@ -77,35 +79,39 @@ function App() {
     );
   };
 
+  // hooks must be at the top level, not after a return
+  const [currentTime, setCurrentTime] = useState(new Date().toLocaleTimeString());
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentTime(new Date().toLocaleTimeString()); // fixed: Date() with parens
+    }, 1000);
+    return () => clearInterval(interval);
+  }, []); // add empty dependency array so this runs once, not on every render
+
   return (
     <div>
-      
       <Wrapper><h1>{message}</h1></Wrapper>
-      
       <p>this is a paragraph</p>
-      
-
       <h2 id="message">{greeting}</h2>
-
       <p>{element}</p>
-
       <p id="myself">
         my name is {fullname}.
         I am {age} years old.
         I am studying in {university}.
       </p>
-
       <Cpp />
+      <ErrorMsg status="error">Something went wrong!</ErrorMsg>
+      <ErrorMsg status="alright">Every thing is alright! don't worry</ErrorMsg>
 
-      <ErrorMsg status="error">
-      Something went wrong!
-      </ErrorMsg>
+      <h1>Welcome to changing states in ReactJS</h1>
+      <h2>{currentTime}</h2>
 
-      <ErrorMsg status="alright">
-      Every thing is alright! don't worry
-      </ErrorMsg>
+      <Counter />
+      <InputDisplay/>
     </div>
   );
+
 }
 
 export default App;
