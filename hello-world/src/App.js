@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import './App.css'
 import Counter from './Counter';
-import InputDisplay from "./InputDisplay";
+import InputDisplay from "./InputDisplay"
+import StudentForm from "./Student-Form";
 
 const CardWrapper = (props) => {
   const cardStyle = {
@@ -109,6 +110,7 @@ function App() {
 
       <Counter />
       <InputDisplay/>
+      <StudentForm />
     </div>
   );
 
